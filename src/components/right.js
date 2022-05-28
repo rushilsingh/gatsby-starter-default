@@ -11,7 +11,7 @@ const Right = () => (
   <div class="col">
     <div>
       <h2 id="about">About</h2>
-      <p>Rushil Singh is a quality-oriented software engineering professional, with over 4 years of experience and proven knowledge of software development, working in the video technology domain with a focus on information security, intelligence gathering and data engineering.</p>
+      <p>Rushil Singh is a quality-oriented software engineering professional, with over 5 years of experience and proven knowledge of software development, working in the video technology domain with a focus on information security, intelligence gathering and data engineering.</p>
       <h2 id="career">Career</h2>
 
       <h3 id="professional-experience">Professional Experience</h3>
