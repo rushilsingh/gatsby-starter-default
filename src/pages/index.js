@@ -1,11 +1,11 @@
 import * as React from "react"
-import Left from '../components/left'
-import Right from '../components/right'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Left from "../components/left"
+import Right from "../components/right"
+import "bootstrap/dist/css/bootstrap.min.css"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import './fonts.css';
-import './index.css';
+import "./fonts.css"
+import "./index.css"
 const IndexPage = () => (
   <Layout>
     <Seo title="Rushil Singh" />
@@ -15,7 +15,6 @@ const IndexPage = () => (
         <Right></Right>
       </div>
     </div>
-
   </Layout>
 )
 
