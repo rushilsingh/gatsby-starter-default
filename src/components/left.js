@@ -5,7 +5,7 @@ import resume from "../images/Resume_RushilSingh.pdf"
 import SocialFollow from "../components/socialfollow"
 
 const Left = () => (
-  <div class="col-sm-3">
+  <div class="col-sm-3" style={{ backgroundColor: `#a9a9a9` }}>
     <div class="sticky-top text-center">
       <StaticImage
         src="../images/rushilsingh.jpeg"
@@ -16,7 +16,7 @@ const Left = () => (
         style={{ marginBottom: `1.45rem` }}
       />
       <Button
-        variant="secondary"
+        variant="danger"
         href={resume}
         download="Resume - Rushil Singh"
       >
@@ -24,7 +24,7 @@ const Left = () => (
       </Button>
       <br />
       <br />
-      <p>
+      <p style={{ color: "white" }}><b></b>
         Rushil Singh is a quality-oriented software engineering professional
         with over 5 years of experience and proven knowledge of software
         development, working in the video technology domain with a focus on

@@ -8,11 +8,12 @@ a.social {
 }
 a.social:hover {
   transform: translateY(-2px);
+  color: crimson;
 }
 a.linkedin {
-  color: #4968ad;
+  color: white;
 }
 
 a.github {
-  color: black;
+  color: white;
 }
