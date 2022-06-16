@@ -8,8 +8,6 @@ import Volunteer from "../components/volunteer"
 function Experience() {
   return (
     <button class="accordion">
-      <>
-        <h2 id="experience">Experience</h2>
         <div id="synamedia" class="card">
           <p>
             <img class="logo" src={synamedia} />
@@ -120,7 +118,6 @@ function Experience() {
             </li>
           </ul>
         </div>
-      </>
       <Volunteer />
     </button>
   )
