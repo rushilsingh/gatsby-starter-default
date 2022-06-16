@@ -4,7 +4,7 @@ import dosco from "../images/dosco.png"
 
 function Education() {
   return (
-    <>
+    <button class="accordion">
       <h2 id="education">Education</h2>
       <div id="bsc" class="card">
         <h3 id="bachelor-of-science">Bachelor of Science</h3>
@@ -93,7 +93,7 @@ function Education() {
           <li>Physics, Chemistry, Mathematics, Computer Science, English</li>
         </ul>
       </div>
-    </>
+    </button>
   )
 }
 

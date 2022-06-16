@@ -7,7 +7,7 @@ import Volunteer from "../components/volunteer"
 
 function Experience() {
   return (
-    <>
+    <button class="accordion">
       <>
         <h2 id="experience">Experience</h2>
         <div id="synamedia" class="card">
@@ -122,7 +122,7 @@ function Experience() {
         </div>
       </>
       <Volunteer />
-    </>
+    </button>
   )
 }
 
