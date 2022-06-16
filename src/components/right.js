@@ -162,11 +162,9 @@ const Right = () => (
 
       <h2 id="education">Education</h2>
 
-      <h3 id="bachelor-of-science---cognitive-systems">
-        Bachelor of Science - <br /> Cognitive Systems
-      </h3>
-      <h4 id="computational-intelligence-and-design-stream">
-        (Computational Intelligence and Design Stream)
+      <h4 id="bachelor-of-science">Bachelor of Science</h4>
+      <h4 id="cognitive-systems">
+        Cognitive Systems -<br /> Computational Intelligence and Design
       </h4>
       <p>
         <img class="logo" src={ubc} height="auto" width="100" />
