@@ -4,7 +4,7 @@ import dosco from "../images/dosco.png"
 import ubc from "../images/ubc.png"
 import volen from "../images/volen.png"
 import cogs from "../images/cogs.png"
-import acl from "../images/alten_calsoft_labs.gif"
+import acl from "../images/alten_calsoft_labs.png"
 
 const Right = () => (
   <div class="col">
@@ -16,10 +16,11 @@ const Right = () => (
       </p>
       <ul>
         <li>
-
           <h4>Software Engineer</h4>
           <ul>
-            <li><h5>Synamedia</h5></li>
+            <li>
+              <h5>Synamedia</h5>
+            </li>
             <li>Feb 2020 - Present</li>
             <li>
               Bengaluru, Karnataka, India
@@ -31,13 +32,15 @@ const Right = () => (
         </li>
       </ul>
       <p>
-        <img class="logo" src={volen} width="149" height="150" />
+        <img class="logo" src={volen} width="150" height="auto" />
       </p>
       <ul>
         <li>
           <h4>Software Engineer</h4>
           <ul>
-            <li><h5>Volen Software Services</h5></li>
+            <li>
+              <h5>Volen Software Services</h5>
+            </li>
             <li>September 2018 - February 2020 (6 months)</li>
             <li>Bengaluru, Karnataka, India</li>
             <li>Contractual work with clients.</li>
@@ -50,13 +53,15 @@ const Right = () => (
       </ul>
 
       <p>
-        <img class="logo" src={acl} width="99" height="100" />
+        <img class="logo" src={acl} width="150" height="auto" />
       </p>
       <ul>
         <li>
           <h4>Software Engineer</h4>
           <ul>
-            <li><h5>Alten Calsoft Labs (now ACL Digital)</h5></li>
+            <li>
+              <h5>Alten Calsoft Labs (now ACL Digital)</h5>
+            </li>
             <li>May 2016 - June 2019 (2 years 2 months)</li>
             <li>
               Bengaluru, Karnataka, India
@@ -73,20 +78,22 @@ const Right = () => (
       </ul>
 
       <p>
-        <img class="logo" src={ubc} height="99" width="100" />
+        <img class="logo" src={ubc} height="auto" width="100" />
       </p>
       <ul>
         <li>
           <h4>Teaching Assistant</h4>
           <ul>
-            <li><h5>The University of British Columbia</h5></li>
+            <li>
+              <h5>The University of British Columbia</h5>
+            </li>
             <li>January 2012 - April 2013 (4 months)</li>
             <li>
               Vancouver, British Columbia, Canada
               <ul>
                 <li>
                   Teaching Assistant (TA) in a third-year Cognitive Systems
-                  course (COGS 299).
+                  course (COGS 300).
                 </li>
                 <li>
                   Served as a liaison between the students and the professor for
@@ -108,14 +115,18 @@ const Right = () => (
       <h3 id="volunteer-experience">Volunteer Experience</h3>
 
       <p>
-        <img class="logo" src={cogs} height="99" width="100" />
+        <img class="logo" src={cogs} height="auto" width="100" />
       </p>
       <ul>
         <li>
           <h4>Industry Relations Officer</h4>
           <ul>
-            <li><h5>Cognitive Systems Society</h5></li>
-            <li><h5>The University of British Columbia</h5></li>
+            <li>
+              <h5>Cognitive Systems Society</h5>
+            </li>
+            <li>
+              <h5>The University of British Columbia</h5>
+            </li>
             <li>April 2011 - April 2014 (2 years)</li>
             <li>
               Vancouver, British Columbia, Canada
@@ -158,7 +169,7 @@ const Right = () => (
         (Computational Intelligence and Design Stream)
       </h4>
       <p>
-        <img class="logo" src={ubc} height="99" width="100" />
+        <img class="logo" src={ubc} height="auto" width="100" />
       </p>
       <h4 id="the-university-of-british-columbia-1">
         The University of British Columbia
@@ -185,7 +196,7 @@ const Right = () => (
 
       <h3 id="indian-school-certificate">Indian School Certificate</h3>
       <p>
-        <img class="logo" src={dosco} height="99" width="100" />
+        <img class="logo" src={dosco} height="auto" width="100" />
       </p>
       <h4 id="the-doon-school">The Doon School</h4>
       <ul>
