@@ -25,10 +25,7 @@ const Left = () => (
       <br />
       <br />
       <p style={{ color: "white" }}><b></b>
-        Rushil Singh is a quality-oriented software engineering professional
-        with over 5 years of experience and proven knowledge of software
-        development, working in the video technology domain with a focus on
-        information security, intelligence gathering and data engineering.
+      Experienced quality-oriented software engineer working on Cybersecurity, Anti-piracy and Addressable Advertising solutions for video content.
       </p>
       <br />
       <SocialFollow />

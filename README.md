@@ -1,1 +1,1 @@
-This is my website.
+Personal website for Rushil Singh
