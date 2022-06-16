@@ -34,7 +34,8 @@ const Layout = ({ children }) => {
       <footer
         style={{
           marginTop: `2rem`,
-          backgroundColor: "white"
+          backgroundColor: "white",
+          width: "231px"
         }}
       >
         © {new Date().getFullYear()}, Rushil Singh
