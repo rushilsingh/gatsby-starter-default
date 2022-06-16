@@ -6,8 +6,12 @@ function Right() {
   return (
     <div class="col">
       <div>
-        <Experience />
-        <Education />
+        <button class="accordion">
+          <Experience />
+        </button>
+        <button class="accordion">
+          <Education />
+        </button>
       </div>
     </div>
   )
