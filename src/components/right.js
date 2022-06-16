@@ -171,7 +171,7 @@ const Right = () => (
 
       <h2 id="education">Education</h2>
       <div id="bsc" class="card">
-        <h4 id="bachelor-of-science">Bachelor of Science</h4>
+        <h3 id="bachelor-of-science">Bachelor of Science</h3>
         <h4 id="cognitive-systems">
           Cognitive Systems -<br /> Computational Intelligence and Design
         </h4>
