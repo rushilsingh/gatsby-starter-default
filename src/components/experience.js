@@ -4,17 +4,16 @@ import synamedia from "../images/synamedia.gif"
 import volen from "../images/volen.png"
 import acl from "../images/alten_calsoft_labs.png"
 import cogs from "../images/cogs.png"
-import { Entry } from "./components"
-
+import { ExperienceEntry } from "./entries"
 
 function Experience() {
   return (
     <button class="accordion">
-      {Entry(synamedia, "Software Engineer", ["Synamedia"], "Feb 2020", "Present", "Bengaluru, Karnataka, India", ["Cybersecurity, Anti-piracy and Addressable Advertising solutions for video content."])}
-      {Entry(volen, "Software Engineer", ["Volen Software Services"], "September 2018", "February 2020", "Bengaluru, Karnataka, India", ["Contractual work with clients developing bespoke software solutions."], "(6 months)", "150")}
-      {Entry(acl, "Software Engineer", ["Alten Calsoft Labs (now ACL Digital)"], "May 2016", "June 2019", "Bengaluru, Karnataka, India", ["Solutions for orchestrating network devices, appliances and virtual appliances in the SDN and NFV space."], "(2 years 2 months)", "150")}
+      {ExperienceEntry(synamedia, "Software Engineer", ["Synamedia"], "Feb 2020", "Present", "Bengaluru, Karnataka, India", ["Cybersecurity, Anti-piracy and Addressable Advertising solutions for video content."])}
+      {ExperienceEntry(volen, "Software Engineer", ["Volen Software Services"], "September 2018", "February 2020", "Bengaluru, Karnataka, India", ["Contractual work with clients developing bespoke software solutions."], "(6 months)", "150")}
+      {ExperienceEntry(acl, "Software Engineer", ["Alten Calsoft Labs (now ACL Digital)"], "May 2016", "June 2019", "Bengaluru, Karnataka, India", ["Solutions for orchestrating network devices, appliances and virtual appliances in the SDN and NFV space."], "(2 years 2 months)", "150")}
 
-      {Entry(ubc, "Teaching Assistant", ["The University of British Columbia"], "January 2012", "April 2013", "Vancouver, British Columbia, Canada",
+      {ExperienceEntry(ubc, "Teaching Assistant", ["The University of British Columbia"], "January 2012", "April 2013", "Vancouver, British Columbia, Canada",
         [
           "Teaching Assistant (TA) in a third-year Cognitive Systems course (COGS 300)",
           "Served as a liaison between the students and the professor for feedback, troubleshooting and effective course administration",
@@ -22,7 +21,7 @@ function Experience() {
           "Updated and moderated the course website. Graded lab reports and examinations."]
         , "(4 months)", "100")}
 
-      {Entry(cogs, "Industry Relations Officer", ["Cognitive Systems Society", "The University of British Columbia"], "April 2012", "April 2014", "Vancouver, British Columbia, Canada",
+      {ExperienceEntry(cogs, "Industry Relations Officer", ["Cognitive Systems Society", "The University of British Columbia"], "April 2012", "April 2014", "Vancouver, British Columbia, Canada",
         [
           "Executive member of the Cognitive Systems Society (CSS)",
           "Liaison between students and industry",
