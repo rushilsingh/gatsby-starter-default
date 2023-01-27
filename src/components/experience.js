@@ -4,73 +4,15 @@ import synamedia from "../images/synamedia.gif"
 import volen from "../images/volen.png"
 import acl from "../images/alten_calsoft_labs.png"
 import cogs from "../images/cogs.png"
-import Logo from "./logo"
+import { Logo, Entry } from "./components"
+
 
 function Experience() {
   return (
     <button class="accordion">
-      <div id="synamedia" class="card">
-        {Logo(synamedia)}
-        <ul>
-          <li>
-            <h4>Software Engineer</h4>
-            <ul>
-              <li>
-                <h5>Synamedia</h5>
-              </li>
-              <li>Feb 2020 - Present</li>
-              <li>
-                Bengaluru, Karnataka, India
-                <ul>
-                  <li>
-                    Cybersecurity, Anti-piracy and Addressable Advertising solutions for video content.
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div id="volen" class="card">
-        {Logo(volen, "150")}
-        <ul>
-          <li>
-            <h4>Software Engineer</h4>
-            <ul>
-              <li>
-                <h5>Volen Software Services</h5>
-              </li>
-              <li>September 2018 - February 2020 (6 months)</li>
-              <li>Bengaluru, Karnataka, India</li>
-              <li>
-                Contractual work with clients developing bespoke software solutions.
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div id="alten_calsoft_labs" class="card">
-        {Logo(acl, "150")}
-        <ul>
-          <li>
-            <h4>Software Engineer</h4>
-            <ul>
-              <li>
-                <h5>Alten Calsoft Labs (now ACL Digital)</h5>
-              </li>
-              <li>May 2016 - June 2019 (2 years 2 months)</li>
-              <li>
-                Bengaluru, Karnataka, India
-                <ul>
-                  <li>
-                    Solutions for orchestrating network devices, appliances and virtual appliances in the SDN and NFV space.
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+      {Entry(synamedia, "Software Engineer", "Synamedia", "Feb 2020", "Present", "Bengaluru, Karnataka, India", "Cybersecurity, Anti-piracy and Addressable Advertising solutions for video content.")}
+      {Entry(volen, "Software Engineer", "Volen Software Services", "September 2018", "February 2020", "Bengaluru, Karnataka, India", "Contractual work with clients developing bespoke software solutions.", "(6 months)", "150")}
+      {Entry(acl, "Software Engineer", "Alten Calsoft Labs (now ACL Digital)", "May 2016", "June 2019", "Bengaluru, Karnataka, India", "Solutions for orchestrating network devices, appliances and virtual appliances in the SDN and NFV space.", "(2 years 2 months)", "150")}
       <div id="ta" class="card">
         {Logo(ubc, "100")}
         <ul>
@@ -152,7 +94,7 @@ function Experience() {
           </li>
         </ul>
       </div>
-    </button>
+    </button >
   )
 }
 

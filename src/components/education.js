@@ -1,8 +1,7 @@
 import React from "react"
 import ubc from "../images/ubc.png"
 import dosco from "../images/dosco.png"
-import Logo from "./logo"
-
+import { Logo } from "./components"
 function Education() {
   return (
     <button class="accordion">
