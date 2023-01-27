@@ -1,6 +1,6 @@
 import React from "react"
 
-function EducationEntry(heading, subheading, subheading_description, logo, institute, graduated, location, descriptions) {
+function EducationEntry(heading, logo, institute, graduated, location, descriptions=[], subheading=null, subheading_description=null) {
   return (<div class="card">
     <h3>{heading}</h3>
     {subheading ? <h4>
