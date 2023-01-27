@@ -4,14 +4,13 @@ import synamedia from "../images/synamedia.gif"
 import volen from "../images/volen.png"
 import acl from "../images/alten_calsoft_labs.png"
 import cogs from "../images/cogs.png"
+import Logo from "./logo"
 
 function Experience() {
   return (
     <button class="accordion">
       <div id="synamedia" class="card">
-        <p>
-          <img class="logo" src={synamedia} />
-        </p>
+        {Logo(synamedia)}
         <ul>
           <li>
             <h4>Software Engineer</h4>
@@ -24,7 +23,7 @@ function Experience() {
                 Bengaluru, Karnataka, India
                 <ul>
                   <li>
-                  Cybersecurity, Anti-piracy and Addressable Advertising solutions for video content.
+                    Cybersecurity, Anti-piracy and Addressable Advertising solutions for video content.
                   </li>
                 </ul>
               </li>
@@ -33,9 +32,7 @@ function Experience() {
         </ul>
       </div>
       <div id="volen" class="card">
-        <p>
-          <img class="logo" src={volen} width="150" height="auto" />
-        </p>
+        {Logo(volen, "150")}
         <ul>
           <li>
             <h4>Software Engineer</h4>
@@ -46,16 +43,14 @@ function Experience() {
               <li>September 2018 - February 2020 (6 months)</li>
               <li>Bengaluru, Karnataka, India</li>
               <li>
-              Contractual work with clients developing bespoke software solutions.
+                Contractual work with clients developing bespoke software solutions.
               </li>
             </ul>
           </li>
         </ul>
       </div>
       <div id="alten_calsoft_labs" class="card">
-        <p>
-          <img class="logo" src={acl} width="150" height="auto" />
-        </p>
+        {Logo(acl, "150")}
         <ul>
           <li>
             <h4>Software Engineer</h4>
@@ -68,7 +63,7 @@ function Experience() {
                 Bengaluru, Karnataka, India
                 <ul>
                   <li>
-                  Solutions for orchestrating network devices, appliances and virtual appliances in the SDN and NFV space.
+                    Solutions for orchestrating network devices, appliances and virtual appliances in the SDN and NFV space.
                   </li>
                 </ul>
               </li>
@@ -77,9 +72,7 @@ function Experience() {
         </ul>
       </div>
       <div id="ta" class="card">
-        <p>
-          <img class="logo" src={ubc} height="auto" width="100" />
-        </p>
+        {Logo(ubc, "100")}
         <ul>
           <li>
             <h4>Teaching Assistant</h4>
@@ -115,9 +108,7 @@ function Experience() {
         </ul>
       </div>
       <div id="cogs_society" class="card">
-        <p>
-          <img class="logo" src={cogs} height="auto" width="100" />
-        </p>
+        {Logo(cogs, "100")}
         <ul>
           <li>
             <h4>Industry Relations Officer</h4>

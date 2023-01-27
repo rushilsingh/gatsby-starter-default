@@ -1,6 +1,7 @@
 import React from "react"
 import ubc from "../images/ubc.png"
 import dosco from "../images/dosco.png"
+import Logo from "./logo"
 
 function Education() {
   return (
@@ -10,9 +11,7 @@ function Education() {
         <h4 id="cognitive-systems">
           Cognitive Systems -<br /> Computational Intelligence and Design
         </h4>
-        <p>
-          <img class="logo" src={ubc} height="auto" width="100" />
-        </p>
+        {Logo(ubc, "100")}
         <h4 id="the-university-of-british-columbia-1">
           The University of British Columbia
         </h4>
@@ -36,9 +35,7 @@ function Education() {
       </div>
       <div id="isc" class="card">
         <h3 id="indian-school-certificate">Indian School Certificate</h3>
-        <p>
-          <img class="logo" src={dosco} height="auto" width="100" />
-        </p>
+        {Logo(dosco, "100")}
         <h4 id="the-doon-school">The Doon School</h4>
         <ul>
           <li>Graduated: 2008</li>
