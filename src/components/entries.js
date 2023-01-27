@@ -1,5 +1,27 @@
 import React from "react"
-function Entry(logo, title, companies, from, to, location, descriptions, duration = null, width = "auto", height = "auto") {
+
+function EducationEntry(heading, subheading, subheading_description, logo, institute, graduated, location, descriptions) {
+  return (<div class="card">
+    <h3>{heading}</h3>
+    {subheading ? <h4>
+      {subheading} -<br /> {subheading_description}
+    </h4> : ""}
+    {Logo(logo, "100")}
+    <h4>{institute}</h4>
+    <ul>
+      <li>Graduated: {graduated}</li>
+      <li>
+        {location}
+        <ul>
+          {Descriptions(descriptions)}
+        </ul>
+      </li>
+    </ul>
+  </div>
+  )
+}
+
+function ExperienceEntry(logo, title, companies, from, to, location, descriptions, duration = null, width = "auto", height = "auto") {
   return (
     <div class="card">
       {Logo(logo, width, height)}
@@ -35,4 +57,4 @@ function Logo(logo, width = "auto", height = "auto") {
 
 }
 
-export { Logo, Entry }
+export { EducationEntry, ExperienceEntry}
