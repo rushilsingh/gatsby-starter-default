@@ -1,19 +1,20 @@
 import React from "react"
 import Logo from "./Logo"
-export default function EducationEntry(heading, logo, institute, graduated, location, descriptions = [], subheading = null, subheading_description = null) {
+
+export default function EducationEntry(props) {
   return (<div class="card">
-    <h3>{heading}</h3>
-    {subheading ? <h4>
-      {subheading} -<br /> {subheading_description}
-    </h4> : ""}
-    {Logo(logo, "100")}
-    <h4>{institute}</h4>
+    <h3>{props.heading}</h3>
+    <h4>
+      {props.subject} -<br /> {props.subject_description}
+    </h4>
+    {Logo(props.logo, props.width)}
+    <h4>{props.institute}</h4>
     <ul>
-      <li>Graduated: {graduated}</li>
+      <li>Graduated: {props.graduated}</li>
       <li>
-        {location}
+        {props.location}
         <ul>
-          {descriptions.map((description) => <li><h5>{description}</h5></li>)}
+          {props.descriptions.map((description) => <li>{description}</li>)}
         </ul>
       </li>
     </ul>

@@ -3,7 +3,7 @@ import { Accordion } from "react-bootstrap"
 import AccordionBody from "react-bootstrap/esm/AccordionBody"
 import Education from "./Education"
 import Experience from "./Experience"
-import {ExperienceEntries} from "../constants/ExperienceEntries"
+import {ExperienceEntries, EducationEntries} from "../constants/Entries"
 export default function RightColumn(){
   return (
   <div class="col">
@@ -18,7 +18,7 @@ export default function RightColumn(){
         <Accordion.Header>Education</Accordion.Header>
         <AccordionBody>
           <Accordion.Body>
-            <Education />
+            <Education items={EducationEntries}/>
           </Accordion.Body>
         </AccordionBody>
       </Accordion.Item>

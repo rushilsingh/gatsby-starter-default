@@ -3,6 +3,20 @@ import volen from "../images/volen.png"
 import acl from "../images/alten_calsoft_labs.png"
 import ubc from "../images/ubc.png"
 
+export const EducationEntries = [
+  {
+    "logo": ubc,
+    "heading": "Bachelor of Science",
+    "institute": "University of British Columbia",
+    "graduated": "2016",
+    "location": "Vancouver, British Columbia, Canada",
+    "descriptions": ["Cognitive Systems is a multidisciplinary program, a combination of the fields of Computer Science, Philosophy, Psychology, Neuroscience, and Linguistics with different streams emphasizing certain fields.",
+      "The Computational Intelligence and Design stream emphasizes Computer Science more so than the other adjacent and overlapping domains."],
+    "subject": "Cognitive Systems",
+    "subject_description": "Computational Intelligence and Design",
+    "width": "100"
+  }
+]
 export const ExperienceEntries = [
   {
     "logo": synamedia,
