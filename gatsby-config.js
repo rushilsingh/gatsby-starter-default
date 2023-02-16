@@ -1,9 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `Rushil Singh`,
-    description: `This is my website`,
+    description: `Personal website for Rushil Singh`,
     author: `@rushilsingh`,
     siteUrl: `https://rushilsingh.dev/`,
+    image: `/src/images/rushilsingh.jpeg`,
+    twitterUsername: `@dev_rushil`
   },
   plugins: [
    {
@@ -26,8 +28,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `rushilsingh.dev`,
-        short_name: `rushilsingh.dev`,
+        name: `Rushil Singh`,
+        short_name: `Rushil Singh`,
         start_url: `/`,
         background_color: `#663399`,
         // This will impact how browsers show your PWA/website

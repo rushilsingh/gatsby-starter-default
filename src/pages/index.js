@@ -6,6 +6,8 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import "./fonts.css"
 import "./index.css"
+import { SEO } from "../components/seo"
+
 
 const IndexPage = () => (
   <Layout>
@@ -20,3 +22,7 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+export const Head = () => (
+  <SEO />
+)
