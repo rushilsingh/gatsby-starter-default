@@ -3,7 +3,6 @@ import EducationEntry from "./EducationEntry";
 
 export default function Education({ item }) {
   return (
-    <button class="accordion">
       <EducationEntry
         logo={item.logo}
         heading={item.heading}
@@ -14,6 +13,5 @@ export default function Education({ item }) {
         description={item.description}
         width={item.width}
       />
-    </button>
   );
 }

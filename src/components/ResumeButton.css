@@ -1,0 +1,17 @@
+.resume-download-button {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.resume-download-button:hover {
+  background-color: var(--flamboyant-color);
+}
