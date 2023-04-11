@@ -1,6 +1,5 @@
 import * as React from "react"
-import LeftColumn from "../components/LeftColumn"
-import RightColumn from "../components/RightColumn"
+import ProfileContainer from "../components/ProfileContainer"
 import "bootstrap/dist/css/bootstrap.min.css"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -12,8 +11,7 @@ const IndexPage = () => (
     <Seo title="Rushil Singh" />
     <div class="container">
       <div class="row">
-        <LeftColumn></LeftColumn>
-        <RightColumn></RightColumn>
+        <ProfileContainer></ProfileContainer>
       </div>
     </div>
   </Layout>
