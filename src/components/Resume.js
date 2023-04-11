@@ -1,13 +1,13 @@
 import React from "react"
-import Button from "react-bootstrap/Button"
 import resume from "../images/Resume_RushilSingh.pdf"
-export default function Resume() {
-  return <Button
-    variant="danger"
-    href={resume}
-    download="Resume - Rushil Singh"
-  >
-    Download Resume
-  </Button>
+import "./ResumeButton.css"
 
+export default function Resume() {
+  return (
+    <a href={resume} download="Resume - Rushil Singh">
+      <button className="resume-download-button">
+        Download Resume
+      </button>
+    </a>
+  )
 }
