@@ -5,27 +5,21 @@ export default function ExperienceEntry(props) {
   return (
     <div className="card entry-card">
       <div className="logo-container">
-        {Logo(props.logo, props.width)}
+        <Logo src={props.logo} width={props.width} alt={props.companies[0]} />
       </div>
-      <ul className="content-container">
-        <li>
-          <h4>{props.title}</h4>
-          <ul>
-            {props.companies.map((company) => (
-              <li key={company}>{company}</li>
-            ))}
-            <li>
-              {props.from} - {props.to} {props.duration ? props.duration : ""}
-            </li>
-            <li>{props.location}</li>
-            <ul>
-              {props.descriptions.map((description) => (
-                <li key={description}>{description}</li>
-              ))}
-            </ul>
-          </ul>
-        </li>
-      </ul>
+      <div className="content-container">
+        <h2 className="experience-entry-title">{props.title}</h2>
+        <ul className="experience-entry-companies">
+          {props.companies.map((company) => (
+            <li key={company} className="experience-entry-company">{company}</li>
+          ))}
+        </ul>
+        <p className="experience-entry-duration">
+          {props.from} - {props.to} {props.duration ? `(${props.duration})` : ""}
+        </p>
+        <p className="experience-entry-location">{props.location}</p>
+        <p className="experience-entry-description">{props.description}</p>
+      </div>
     </div>
   );
 }

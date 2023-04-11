@@ -11,7 +11,7 @@ export default function Experience({ item }) {
         from={item.from}
         to={item.to}
         location={item.location}
-        descriptions={item.descriptions}
+        description={item.description}
         duration={item.duration}
         width={item.width}
       />

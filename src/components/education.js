@@ -11,7 +11,7 @@ export default function Education({ item }) {
         subject_description={item.subject_description}
         graduated={item.graduated}
         location={item.location}
-        descriptions={item.descriptions}
+        description={item.description}
         width={item.width}
       />
     </button>
