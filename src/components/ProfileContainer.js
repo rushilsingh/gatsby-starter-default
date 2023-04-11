@@ -1,4 +1,5 @@
 import React from "react";
+import EntryCard from "./EntryCard";
 import { educationEntries, experienceEntries } from "../constants/Entries";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -6,9 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import ProfileImage from "./ProfileImage";
 import Bio from "./Bio";
 import Resume from "./Resume";
-import Education from "./education";
-import Experience from "./experience";
-import SocialFollow from "./socialfollow"
+import SocialFollow from "./socialfollow";
 
 export default function ProfileContainer() {
   const settings = {
@@ -49,7 +48,18 @@ export default function ProfileContainer() {
             <Slider {...settings}>
               {experienceEntries.map((item, index) => (
                 <div key={index} style={{ height: slideHeight, overflow: "hidden" }}>
-                  <Experience item={item} />
+                  <EntryCard
+                    type="experience"
+                    logo={item.companyLogo}
+                    heading={item.jobTitle}
+                    subHeading={item.company}
+                    details={[
+                      `${item.startDate} - ${item.endDate}${item.duration ? ` (${item.duration})` : ""}`,
+                      item.location,
+                      item.description,
+                    ]}
+                    width={item.width}
+                  />
                 </div>
               ))}
             </Slider>
@@ -61,7 +71,19 @@ export default function ProfileContainer() {
             <Slider {...settings}>
               {educationEntries.map((item, index) => (
                 <div key={index} style={{ height: slideHeight, overflow: "hidden" }}>
-                  <Education item={item} />
+                  <EntryCard
+                    type="education"
+                    logo={item.instituteLogo}
+                    heading={item.degree}
+                    subHeading={`${item.major} - ${item.specialization}`}
+                    details={[
+                      `${item.instituteName}`,
+                      `Graduated: ${item.graduationYear}`,
+                      `${item.location}`,
+                      `${item.description}`,
+                    ]}
+                    width={item.width}
+                  />
                 </div>
               ))}
             </Slider>
