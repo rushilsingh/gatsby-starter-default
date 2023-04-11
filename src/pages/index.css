@@ -305,3 +305,36 @@ footer {
     color:#444;
   }
 }
+/* Custom CSS for arrow buttons */
+.slick-arrow {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slick-prev {
+  left: -15px;
+}
+
+.slick-next {
+  right: -15px;
+}
+
+.slick-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.slider-wrapper {
+  position: relative;
+  max-width: 700px; /* Same max-width as .entry-card */
+  margin: 0 auto;
+}
