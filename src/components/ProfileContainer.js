@@ -1,14 +1,14 @@
 import React from "react";
-import Education from "./Education";
-import Experience from "./Experience";
-import { ExperienceEntries, EducationEntries } from "../constants/Entries";
+import { educationEntries, experienceEntries } from "../constants/Entries";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ProfileImage from "./ProfileImage";
 import Bio from "./Bio";
-import SocialFollow from "./socialfollow";
 import Resume from "./Resume";
+import Education from "./education";
+import Experience from "./experience";
+import SocialFollow from "./socialfollow"
 
 export default function ProfileContainer() {
   const settings = {
@@ -47,7 +47,7 @@ export default function ProfileContainer() {
           <h3>Experience</h3>
           <div className="slider-wrapper" style={{ height: "100%" }}>
             <Slider {...settings}>
-              {ExperienceEntries.map((item, index) => (
+              {experienceEntries.map((item, index) => (
                 <div key={index} style={{ height: slideHeight, overflow: "hidden" }}>
                   <Experience item={item} />
                 </div>
@@ -59,7 +59,7 @@ export default function ProfileContainer() {
           <h3>Education</h3>
           <div className="slider-wrapper" style={{ height: "100%" }}>
             <Slider {...settings}>
-              {EducationEntries.map((item, index) => (
+              {educationEntries.map((item, index) => (
                 <div key={index} style={{ height: slideHeight, overflow: "hidden" }}>
                   <Education item={item} />
                 </div>

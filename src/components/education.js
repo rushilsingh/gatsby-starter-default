@@ -1,17 +1,23 @@
 import React from "react";
 import EducationEntry from "./EducationEntry";
-
-export default function Education({ item }) {
+import { educationEntries } from "../constants/Entries";
+export default function Education() {
   return (
-      <EducationEntry
-        logo={item.logo}
-        heading={item.heading}
-        subject={item.subject}
-        subject_description={item.subject_description}
-        graduated={item.graduated}
-        location={item.location}
-        description={item.description}
-        width={item.width}
-      />
+    <div>
+      {educationEntries.map((entry, index) => (
+        <EducationEntry
+          key={index}
+          logo={entry.instituteLogo}
+          heading={entry.degree}
+          subject={`${entry.major} - ${entry.specialization}`}
+          institute={entry.instituteName}
+          graduated={entry.graduationYear}
+          location={entry.location}
+          description={entry.description}
+          width={entry.width}
+        />
+      ))}
+    </div>
   );
 }
+

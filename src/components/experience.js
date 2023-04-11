@@ -1,17 +1,23 @@
 import React from "react";
 import ExperienceEntry from "./ExperienceEntry";
-export default function Experience({ item }) {
+import { experienceEntries } from "../constants/Entries";
+export default function Experience() {
   return (
-    <ExperienceEntry
-      logo={item.logo}
-      title={item.title}
-      companies={item.companies}
-      from={item.from}
-      to={item.to}
-      location={item.location}
-      description={item.description}
-      duration={item.duration}
-      width={item.width}
-    />
+    <div>
+      {experienceEntries.map((entry, index) => (
+        <ExperienceEntry
+          key={index}
+          logo={entry.companyLogo}
+          title={entry.jobTitle}
+          companies={[entry.company]}
+          from={entry.startDate}
+          to={entry.endDate}
+          location={entry.location}
+          description={entry.description}
+          duration={entry.duration}
+          width={entry.width}
+        />
+      ))}
+    </div>
   );
 }
