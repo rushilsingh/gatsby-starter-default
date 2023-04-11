@@ -5,28 +5,45 @@ export default function EducationEntry(props) {
   return (
     <div className="card entry-card">
       <div className="logo-container">
-        <Logo src={props.logo} width={props.width} alt={props.institute} />
+        <Logo src={props.logo} alt={props.institute} width={props.width} />
       </div>
       <div className="content-container">
-        <h2 className="education-entry-heading">{props.heading}</h2>
-        <h3 className="education-entry-subject">{props.subject}</h3>
-        <p className="education-entry-subject-description">{props.subject_description}</p>
-        <h4 className="education-entry-institute">{props.institute}</h4>
-        <ul className="education-entry-details">
+        <h3>{props.heading}</h3>
+        <h4>
+          {props.subject} -<br /> {props.subject_description}
+        </h4>
+        <h4>{props.institute}</h4>
+        <ul>
+          <li>Graduated: {props.graduated}</li>
           <li>
-            <span className="education-entry-detail-label">Graduated:</span>
-            <span className="education-entry-detail-value">{props.graduated}</span>
-          </li>
-          <li>
-            <span className="education-entry-detail-label">Location:</span>
-            <span className="education-entry-detail-value">{props.location}</span>
-          </li>
-          <li>
-            <span className="education-entry-detail-label">Description:</span>
-            <span className="education-entry-detail-value">{props.description}</span>
+            {props.location}
+            {props.description}
           </li>
         </ul>
       </div>
+      <style jsx>{`
+        .logo-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 16px;
+        }
+
+        .logo-container img {
+          max-width: 100%;
+        }
+
+        @media screen and (max-width: 768px) {
+          .card {
+            flex-direction: column;
+          }
+
+          .logo-container {
+            margin-right: 0;
+            margin-bottom: 16px;
+          }
+        }
+      `}</style>
     </div>
   );
 }

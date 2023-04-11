@@ -1,8 +1,5 @@
-import React from "react"
+import React from "react";
 
-export default function Logo(logo, width=null) {
-  return (<p>
-    <img class="logo" src={logo} width={width ? width : "auto"} height="auto" alt="" />
-  </p>)
-
+export default function Logo(props) {
+  return <img src={props.src} alt={props.alt} width={props.width} />;
 }
