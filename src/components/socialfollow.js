@@ -1,11 +1,11 @@
-import React from "react"
-import "./SocialFollow.css"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
+import React from "react";
+import "./SocialFollow.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
-export default function SocialFollow() {
+const SocialFollow = () => {
   return (
-    <div class="social-container">
+    <div className="social-container">
       <a href="https://www.github.com/rushilsingh" className="github social">
         <FontAwesomeIcon icon={faGithub} size="4x" />
       </a>
@@ -16,5 +16,7 @@ export default function SocialFollow() {
         <FontAwesomeIcon icon={faLinkedin} size="4x" />
       </a>
     </div>
-  )
-}
+  );
+};
+
+export default SocialFollow;

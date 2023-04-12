@@ -8,6 +8,8 @@ import ProfileImage from "./ProfileImage";
 import Bio from "./Bio";
 import Resume from "./Resume";
 import SocialFollow from "./socialfollow";
+import "./ProfileContainer.css";
+
 
 export default function ProfileContainer() {
   const settings = {
