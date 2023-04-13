@@ -10,6 +10,12 @@ import Resume from "./Resume";
 import SocialFollow from "./socialfollow";
 import "./ProfileContainer.css";
 
+function formatDate(date) {
+  const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  const month = monthNames[date.getMonth()];
+  const year = date.getFullYear();
+  return `${month} ${year}`;
+}
 
 export default function ProfileContainer() {
   const settings = {
@@ -32,7 +38,7 @@ export default function ProfileContainer() {
   };
 
   const slideHeight = "auto"; // Adjust the height to match .entry-card
-
+  
   return (
     <div className="row" style={{ padding: "0 1rem" }}>
       <div className="col-sm-4" style={{ backgroundColor: "#a9a9a9", padding: "1rem" }}>
@@ -48,22 +54,24 @@ export default function ProfileContainer() {
           <h3>Experience</h3>
           <div className="slider-wrapper" style={{ height: "100%" }}>
             <Slider {...settings}>
-              {experienceEntries.map((item, index) => (
-                <div key={index} style={{ height: slideHeight, overflow: "hidden" }}>
-                  <EntryCard
-                    type="experience"
-                    logo={item.companyLogo}
-                    heading={item.jobTitle}
-                    subHeading={item.company}
-                    details={[
-                      `${item.startDate} - ${item.endDate}${item.duration ? ` (${item.duration})` : ""}`,
-                      item.location,
-                      item.description,
-                    ]}
-                    width={item.width}
-                  />
-                </div>
-              ))}
+              {experienceEntries.map((item, index) => {
+                return (
+                  <div key={index} style={{ height: slideHeight, overflow: "hidden" }}>
+                    <EntryCard
+                      type="experience"
+                      logo={item.companyLogo}
+                      heading={item.jobTitle}
+                      subHeading={item.company}
+                      details={[
+                        `${formatDate(item.startDate)} - ${item.endDate ? formatDate(item.endDate) : "Present"}${item.duration ? ` (${item.duration})` : ""}`,
+                        item.location,
+                        item.description,
+                      ]}
+                      width={item.width}
+                    />
+                  </div>
+                );
+              })}
             </Slider>
           </div>
         </div>
@@ -94,4 +102,5 @@ export default function ProfileContainer() {
       </div>
     </div>
   );
+   
 }
