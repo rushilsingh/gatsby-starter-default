@@ -1,5 +1,4 @@
 import React from "react";
-import EntryCard from "./EntryCard";
 import { educationEntries, experienceEntries } from "../constants/Entries";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -9,13 +8,8 @@ import Bio from "./Bio";
 import Resume from "./Resume";
 import SocialFollow from "./socialfollow";
 import "./ProfileContainer.css";
-
-function formatDate(date) {
-  const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-  const month = monthNames[date.getMonth()];
-  const year = date.getFullYear();
-  return `${month} ${year}`;
-}
+import EducationEntry from './EducationEntry';
+import ExperienceEntry from './ExperienceEntry';
 
 export default function ProfileContainer() {
   const settings = {
@@ -37,8 +31,6 @@ export default function ProfileContainer() {
     ),
   };
 
-  const slideHeight = "auto"; // Adjust the height to match .entry-card
-  
   return (
     <div className="row" style={{ padding: "0 1rem" }}>
       <div className="col-sm-4" style={{ backgroundColor: "#a9a9a9", padding: "1rem" }}>
@@ -56,19 +48,8 @@ export default function ProfileContainer() {
             <Slider {...settings}>
               {experienceEntries.map((item, index) => {
                 return (
-                  <div key={index} style={{ height: slideHeight, overflow: "hidden" }}>
-                    <EntryCard
-                      type="experience"
-                      logo={item.companyLogo}
-                      heading={item.jobTitle}
-                      subHeading={item.company}
-                      details={[
-                        `${formatDate(item.startDate)} - ${item.endDate ? formatDate(item.endDate) : "Present"}${item.duration ? ` (${item.duration})` : ""}`,
-                        item.location,
-                        item.description,
-                      ]}
-                      width={item.width}
-                    />
+                  <div key={index} style={{ height: "auto", overflow: "hidden" }}>
+                    <ExperienceEntry entry={item} />
                   </div>
                 );
               })}
@@ -80,20 +61,8 @@ export default function ProfileContainer() {
           <div className="slider-wrapper" style={{ height: "100%" }}>
             <Slider {...settings}>
               {educationEntries.map((item, index) => (
-                <div key={index} style={{ height: slideHeight, overflow: "hidden" }}>
-                  <EntryCard
-                    type="education"
-                    logo={item.instituteLogo}
-                    heading={item.degree}
-                    subHeading={`${item.major} - ${item.specialization}`}
-                    details={[
-                      `${item.instituteName}`,
-                      `Graduated: ${item.graduationYear}`,
-                      `${item.location}`,
-                      `${item.description}`,
-                    ]}
-                    width={item.width}
-                  />
+                <div key={index} style={{ height: "auto", overflow: "hidden" }}>
+                  <EducationEntry entry={item} />
                 </div>
               ))}
             </Slider>
@@ -102,5 +71,4 @@ export default function ProfileContainer() {
       </div>
     </div>
   );
-   
 }

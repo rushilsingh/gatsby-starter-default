@@ -17,9 +17,8 @@ const EntryCard = ({
         <h3 className="entry-title">{heading}</h3>
         <span className="entry-subtitle">{subHeading}</span>
         {details.map((detail, index) => (
-          <div key={index} className="entry-detail">
+          <div key={index} className={`entry-detail ${index !== details.length - 1 ? 'detail-with-margin' : ''}`}>
             {index === 2 ? <p>{detail}</p> : <span>{detail}</span>}
-            {index !== details.length - 1 && <br />}
           </div>
         ))}
       </div>

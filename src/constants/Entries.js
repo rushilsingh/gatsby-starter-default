@@ -25,7 +25,7 @@ export const experienceEntries = [
     startDate: new Date("2020-02-05"),
     endDate: null,
     location: "Bengaluru, Karnataka, India",
-    description: "At Synamedia, I've developed anti-piracy and addressable advertising solutions using Python, AWS, JavaScript, and Flutter, while providing valuable insights and mentoring colleagues. My commitment to clean coding and continuous learning has consistently led to successful, high-quality projects.",
+    description: "At Synamedia, I've developed anti-piracy and addressable advertising solutions using Python, AWS, JavaScript, and Flutter.",
     width: 150
   },
   {
