@@ -10,6 +10,7 @@ import SocialFollow from "./socialfollow";
 import "./ProfileContainer.css";
 import EducationEntry from './EducationEntry';
 import ExperienceEntry from './ExperienceEntry';
+import ContactForm from "./ContactForm";
 
 export default function ProfileContainer() {
   const settings = {
@@ -46,13 +47,11 @@ export default function ProfileContainer() {
           <h3>Experience</h3>
           <div className="slider-wrapper" style={{ height: "100%" }}>
             <Slider {...settings}>
-              {experienceEntries.map((item, index) => {
-                return (
-                  <div key={index} style={{ height: "auto", overflow: "hidden" }}>
-                    <ExperienceEntry entry={item} />
-                  </div>
-                );
-              })}
+              {experienceEntries.map((item, index) => (
+                <div key={index} style={{ height: "auto", overflow: "hidden" }}>
+                  <ExperienceEntry entry={item} />
+                </div>
+              ))}
             </Slider>
           </div>
         </div>
@@ -69,6 +68,13 @@ export default function ProfileContainer() {
           </div>
         </div>
       </div>
+      <div className="col-sm-4" style={{ backgroundColor: "#a9a9a9", padding: "1rem" }}>
+        <div className="sticky-top text-center">
+          <h3>Contact</h3>
+          <ContactForm />
+        </div>
+      </div>
     </div>
   );
+  
 }
