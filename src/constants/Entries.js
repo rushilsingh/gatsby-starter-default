@@ -12,7 +12,7 @@ export const educationEntries = [
     instituteName: "University of British Columbia",
     graduationYear: "2016",
     location: "Vancouver, British Columbia, Canada",
-    description: "I obtained a degree in Cognitive Systems, a multidisciplinary program that combines Computer Science, Philosophy, Psychology, Neuroscience, and Linguistics. My focus was on the Computational Intelligence and Design stream, which emphasized Computer Science while intersecting with related fields.",
+    description: "Earned a B.Sc. in Cognitive Systems, blending disciplines like Computer Science and Psychology, emphasizing an interdisciplinary approach. Achieved the President's Entrance Scholarship and served as Industry Relations Officer, Cognitive Systems Society.",
     width: 100
   }
 ];
@@ -20,32 +20,42 @@ export const educationEntries = [
 export const experienceEntries = [
   {
     companyLogo: synamedia,
+    jobTitle: "Senior Software Engineer",
+    company: "Synamedia",
+    startDate: new Date("2024-01-01"),
+    endDate: null,
+    location: "Bengaluru, Karnataka, India",
+    description: "Leading the development of a cross-platform addressable advertising solution.",
+    width: 150
+  },
+  {
+    companyLogo: synamedia,
     jobTitle: "Software Engineer",
     company: "Synamedia",
     startDate: new Date("2020-02-05"),
-    endDate: null,
+    endDate: new Date("2023-12-31"),
     location: "Bengaluru, Karnataka, India",
-    description: "At Synamedia, I've developed anti-piracy and addressable advertising solutions using Python, AWS, JavaScript, and Flutter.",
+    description: "Contributed to pioneering SaaS anti-piracy solutions, focusing on data engineering and backend development. Led the creation of a management portal using the MERN stack, streamlining product operations.",
     width: 150
   },
   {
     companyLogo: volen,
     jobTitle: "Software Engineer",
-    company: "Volen Software Services",
+    company: "Volen Software Services Pvt. Ltd",
     startDate: new Date("2019-09-03"),
     endDate: new Date("2020-02-04"),
     location: "Bengaluru, Karnataka, India",
-    description: "At Volen Software Services, I contributed to Synamedia's anti-piracy solution using Python-based frameworks, delivering client-oriented software.",
+    description: "Integral in developing Synamedia's anti-piracy solution, focusing on Python frameworks. Recognized for high-quality software solutions, leading to a full-time position at Synamedia.",
     width: 150
   },
   {
     companyLogo: acl,
     jobTitle: "Software Engineer",
-    company: "Alten Calsoft Labs (now ACL Digital)",
+    company: "ACL Digital",
     startDate: new Date("2017-05-01"),
-    endDate: new Date("2019-06-30"),
+    endDate: new Date("2019-07-31"),
     location: "Bengaluru, Karnataka, India",
-    description: "At Alten Calsoft Labs, I gained expertise in crafting SDN and NFV solutions, leveraging my skills in software development and networking to deliver tailored, client-centric results.",
+    description: "Focused on SDN/NFV solutions, managing device orchestration and developing resource adaptors.",
     width: 150
   },
   {
@@ -55,7 +65,7 @@ export const experienceEntries = [
     startDate: new Date("2013-01-02"),
     endDate: new Date("2013-04-24"),
     location: "Vancouver, British Columbia, Canada",
-    description: "As a Teaching Assistant for UBC's COGS 300 course, I gained experience in course administration, curriculum development, and student mentorship. I facilitated communication, crafted lab tasks, and assessed reports and exams, contributing to course success and fostering a positive learning environment.",
+    description: "Facilitated a core Cognitive Systems course, bridging communication between students and faculty. Played a key role in curriculum development and student mentorship, contributing to academic success.",
     width: 100
   }
 ];
