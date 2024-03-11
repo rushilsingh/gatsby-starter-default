@@ -12,10 +12,11 @@ export const educationEntries = [
     instituteName: "University of British Columbia",
     graduationYear: "2016",
     location: "Vancouver, British Columbia, Canada",
-    description: "Earned a B.Sc. in Cognitive Systems, blending disciplines like Computer Science and Psychology, emphasizing an interdisciplinary approach. Achieved the President's Entrance Scholarship and served as Industry Relations Officer, Cognitive Systems Society.",
-    width: 100
-  }
-];
+    description:
+      "Earned a B.Sc. in Cognitive Systems, blending disciplines like Computer Science and Psychology, emphasizing an interdisciplinary approach. Achieved the President's Entrance Scholarship and served as Industry Relations Officer, Cognitive Systems Society.",
+    width: 100,
+  },
+]
 
 export const experienceEntries = [
   {
@@ -25,8 +26,9 @@ export const experienceEntries = [
     startDate: new Date("2024-01-01"),
     endDate: null,
     location: "Bengaluru, Karnataka, India",
-    description: "Leading the development of a cross-platform addressable advertising solution.",
-    width: 150
+    description:
+      "Working on cloud infrastructure and backend components for video applications. Led the development of a cross-platform dynamic ad insertion solution for video applications",
+    width: 150,
   },
   {
     companyLogo: synamedia,
@@ -35,8 +37,9 @@ export const experienceEntries = [
     startDate: new Date("2020-02-05"),
     endDate: new Date("2023-12-31"),
     location: "Bengaluru, Karnataka, India",
-    description: "Contributed to pioneering SaaS anti-piracy solutions, focusing on data engineering and backend development. Led the creation of a management portal using the MERN stack, streamlining product operations.",
-    width: 150
+    description:
+      "Contributed to pioneering SaaS anti-piracy solutions, focusing on data engineering and backend development. Led the creation of a management portal using the MERN stack, streamlining product operations.",
+    width: 150,
   },
   {
     companyLogo: volen,
@@ -45,8 +48,9 @@ export const experienceEntries = [
     startDate: new Date("2019-09-03"),
     endDate: new Date("2020-02-04"),
     location: "Bengaluru, Karnataka, India",
-    description: "Integral in developing Synamedia's anti-piracy solution, focusing on Python frameworks. Recognized for high-quality software solutions, leading to a full-time position at Synamedia.",
-    width: 150
+    description:
+      "Integral in developing Synamedia's anti-piracy solution, focusing on Python frameworks. Recognized for high-quality software solutions, Spearheading to a full-time position at Synamedia.",
+    width: 150,
   },
   {
     companyLogo: acl,
@@ -55,8 +59,9 @@ export const experienceEntries = [
     startDate: new Date("2017-05-01"),
     endDate: new Date("2019-07-31"),
     location: "Bengaluru, Karnataka, India",
-    description: "Focused on SDN/NFV solutions, managing device orchestration and developing resource adaptors.",
-    width: 150
+    description:
+      "Focused on SDN/NFV solutions, managing device orchestration and developing resource adaptors.",
+    width: 150,
   },
   {
     companyLogo: ubc,
@@ -65,7 +70,8 @@ export const experienceEntries = [
     startDate: new Date("2013-01-02"),
     endDate: new Date("2013-04-24"),
     location: "Vancouver, British Columbia, Canada",
-    description: "Facilitated a core Cognitive Systems course, bridging communication between students and faculty. Played a key role in curriculum development and student mentorship, contributing to academic success.",
-    width: 100
-  }
-];
+    description:
+      "Facilitated a core Cognitive Systems course, bridging communication between students and faculty. Played a key role in curriculum development and student mentorship, contributing to academic success.",
+    width: 100,
+  },
+]
