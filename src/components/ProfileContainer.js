@@ -33,7 +33,7 @@ export default function ProfileContainer() {
 
   return (
     <div className="row" style={{ padding: "0 1rem" }}>
-      <div className="col-sm-4" style={{ backgroundColor: "#a9a9a9", padding: "1rem" }}>
+      <div className="col-sm-4" style={{  padding: "1rem" }}>
         <div className="sticky-top text-center">
           <ProfileImage />
           <Resume />

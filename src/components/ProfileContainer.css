@@ -3,7 +3,7 @@
 }
 
 .col-sm-4 {
-  background-color: #a9a9a9;
+  background-color: var(--tertiary-color);
   padding: 1rem;
 }
 
