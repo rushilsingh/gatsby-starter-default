@@ -25,7 +25,7 @@ export const experienceEntries = [
     startDate: new Date("2024-01-01"),
     endDate: null,
     location: "Bengaluru, Karnataka, India",
-    description: "Leading the development of a cross-platform addressable advertising solution.",
+    description: "Spearheading the development of a cross-platform addressable advertising solution.",
     width: 150
   },
   {
@@ -45,7 +45,7 @@ export const experienceEntries = [
     startDate: new Date("2019-09-03"),
     endDate: new Date("2020-02-04"),
     location: "Bengaluru, Karnataka, India",
-    description: "Integral in developing Synamedia's anti-piracy solution, focusing on Python frameworks. Recognized for high-quality software solutions, leading to a full-time position at Synamedia.",
+    description: "Integral in developing Synamedia's anti-piracy solution, focusing on Python frameworks. Recognized for high-quality software solutions, Spearheading to a full-time position at Synamedia.",
     width: 150
   },
   {
