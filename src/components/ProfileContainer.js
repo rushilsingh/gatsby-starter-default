@@ -10,6 +10,8 @@ import SocialFollow from "./socialfollow";
 import "./ProfileContainer.css";
 import EducationEntry from './EducationEntry';
 import ExperienceEntry from './ExperienceEntry';
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+
 
 export default function ProfileContainer() {
   const settings = {
@@ -19,16 +21,8 @@ export default function ProfileContainer() {
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
-    prevArrow: (
-      <button className="slick-arrow slick-prev">
-        <span className="material-icons">arrow_back</span>
-      </button>
-    ),
-    nextArrow: (
-      <button className="slick-arrow slick-next">
-        <span className="material-icons">arrow_forward</span>
-      </button>
-    ),
+    prevArrow: <IoIosArrowBack className="slick-prev" />,
+    nextArrow: <IoIosArrowForward className="slick-next" />,
   };
 
   return (
