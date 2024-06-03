@@ -1,17 +1,17 @@
+.profile-image-container {
+  display: inline-block; /* Ensures container doesn't take full width */
+}
+
 .profile-image {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
   margin-bottom: 1.45rem;
   width: 100%;
   max-width: 300px;
-  border-radius: 50%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 /* For smaller screens */
 @media screen and (max-width: 576px) {
   .profile-image {
-    width: 70%;
-    max-width: 210px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 70%;
   }
 }

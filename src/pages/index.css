@@ -1,9 +1,12 @@
 :root {
-  --primary-color: #333;
-  --secondary-color: #f5f5f5;
-  --accent-color: #6c3483;
-  --flamboyant-color:#a67f00; 
+  --primary-color: #37474f; /* Dark Blue Grey */
+  --secondary-color: #eceff1; /* Greyish White */
+  --accent-color: #ff5722; /* Deep Orange */
+  --flamboyant-color: #03a9f4; /* Light Blue */
+  --tertiary-color: #795548; /* Brown */
 }
+
+
 
 body {
   font-family: "Noto Sans", sans-serif;
@@ -26,44 +29,6 @@ a:hover {
   color: var(--flamboyant-color);
 }
 
-/* Slick arrows */
-.slick-arrow {
-  background-color: var(--accent-color);
-  color: var(--secondary-color);
-  border: none;
-  font-size: 1.5rem;
-  padding: 0.5rem 1rem;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-}
-
-.slick-prev {
-  left: -2rem;
-}
-
-.slick-next {
-  right: -2rem;
-}
-
-.slick-arrow:hover,
-.slick-arrow:focus {
-  background-color: var(--flamboyant-color);
-  color: var(--secondary-color);
-  outline: none;
-  cursor: pointer;
-}
-
-.slick-arrow.slick-disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-/* Other styles */
-.slider-wrapper {
-  position: relative;
-}
 
 .sticky-top {
   position: sticky;

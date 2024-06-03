@@ -3,7 +3,7 @@
 }
 
 .col-sm-4 {
-  background-color: #a9a9a9;
+  background-color: var(--tertiary-color);
   padding: 1rem;
 }
 
@@ -19,11 +19,65 @@
 
 .slider-wrapper {
   height: 100%;
+  position: relative;
+
+
 }
 
 .col-sm-8 {
   display: flex;
   flex-direction: column;
+}
+/* Slick arrow buttons */
+.slick-arrow {
+  display: flex; /* Aligns the SVG icon */
+  justify-content: center; /* Centers the SVG icon horizontally */
+  align-items: center; /* Centers the SVG icon vertically */
+  background-color: var(--light-color); /* Lighter background color for contrast */
+  color: var(--accent-color); /* Color of the SVG icon */
+  width: 40px; /* Increased width for visibility */
+  height: 40px; /* Increased height for visibility */
+  border-radius: 50%; /* Keeps the circular shape */
+  padding: 0; /* Adjust padding if needed */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  border: 2px solid var(--accent-color); /* Border to define the arrow */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Shadow for depth */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* SVG icon specific styles */
+.slick-prev svg, .slick-next svg {
+  color: var(--accent-color); /* Ensures the icon stands out */
+  width: 24px; /* Size of the SVG icon */
+  height: 24px; /* Size of the SVG icon */
+}
+
+
+/* Hover and focus states */
+.slick-arrow:hover,
+.slick-arrow:focus {
+  background-color: var(--flamboyant-color); /* Background color on hover/focus */
+  border-color: var(--flamboyant-color); /* Border color on hover/focus */
+  color: var(--light-color); /* Icon color on hover/focus */
+  outline: none;
+  cursor: pointer;
+  transform: translateY(-50%) scale(1.1); /* Scale effect on hover/focus */
+}
+
+/* Disabled state */
+.slick-arrow.slick-disabled {
+  opacity: 0.3; /* More pronounced disabled effect */
+  cursor: not-allowed;
+}
+
+.slick-arrow.slick-disabled:hover,
+.slick-arrow.slick-disabled:focus {
+background-color: var(--light-color); /* Keeps the background consistent */
+border-color: var(--accent-color); /* Keeps the border consistent */
+transform: translateY(-50%); /* Removes the scale effect */
 }
 
 h3 {
