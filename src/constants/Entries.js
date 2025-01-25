@@ -27,7 +27,7 @@ export const experienceEntries = [
     endDate: null,
     location: "Bengaluru, Karnataka, India",
     description:
-      "Working on cloud infrastructure and backend components for video applications. Led the development of a cross-platform dynamic ad insertion solution for video applications",
+      "Developing and maintaining cloud infrastructure and backend components for web, mobile, and set-top box video applications.",
     width: 150,
   },
   {
@@ -38,7 +38,7 @@ export const experienceEntries = [
     endDate: new Date("2023-12-31"),
     location: "Bengaluru, Karnataka, India",
     description:
-      "Contributed to pioneering SaaS anti-piracy solutions, focusing on data engineering and backend development. Led the creation of a management portal using the MERN stack, streamlining product operations.",
+      "Cybersecurity, Anti-piracy and Addressable Advertising solutions for video content.",
     width: 150,
   },
   {
@@ -49,7 +49,7 @@ export const experienceEntries = [
     endDate: new Date("2020-02-04"),
     location: "Bengaluru, Karnataka, India",
     description:
-      "Integral in developing Synamedia's anti-piracy solution, focusing on Python frameworks. Recognized for high-quality software solutions, Spearheading to a full-time position at Synamedia.",
+      "Played a pivotal role in developing an anti-piracy solution for Synamedia while working with Volen. Outstanding contributions led to a full-time role at Synamedia.",
     width: 150,
   },
   {
@@ -60,7 +60,7 @@ export const experienceEntries = [
     endDate: new Date("2019-07-31"),
     location: "Bengaluru, Karnataka, India",
     description:
-      "Focused on SDN/NFV solutions, managing device orchestration and developing resource adaptors.",
+      "Contributed to developing a product for orchestrating network devices and virtual appliances.",
     width: 150,
   },
   {
